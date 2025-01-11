@@ -26,13 +26,17 @@ m_{total} = \prod_{i=1}^n (1-m_i)
 ```
 
 
-```math
-    a_k :subscript \\
-    a_{long} :long \space subscript \\
-    b^k:superscript \\
-    \mu:symbol(mu) \\
-    \overline{AB}: overline \\
-    \dot{m}: dot
+**inline formula symbols** \
+Some text. Now a formula:
+$a_k = b^n + c$ with more text \
+And some more text on a new line.
+
+More examples:
+*  long subscript: $a_{long}$
+*  superscript: $b^k$ 
+*  symbol(mu, micro): $\mu$
+*  overline: $\overline{AB}$
+*  dot: $\dot{m}$
 ```
 
 **Block quote**
