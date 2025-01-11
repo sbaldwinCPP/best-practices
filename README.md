@@ -22,7 +22,13 @@ based on [KaTeX](https://katex.org/docs/supported.html)
 ```
 
 ```math
+m_{total} = \prod_{i=1}^n (1-m_i)
+```
+
+
+```math
     a_k :subscript \\
+    a_{long} :long \space subscript \\
     b^k:superscript \\
     \mu:symbol(mu) \\
     \overline{AB}: overline \\
