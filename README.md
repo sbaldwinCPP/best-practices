@@ -8,7 +8,7 @@ github-flavored markdown [guide](https://docs.github.com/en/get-started/writing-
 
 **Python-flavored code block**
 ```python
-# triple back-ticks make a code block
+# triple back-ticks (```) make a code block
 # syntax highlight defined in top line 
 
 import pandas as pd
@@ -25,23 +25,20 @@ based on [KaTeX](https://katex.org/docs/supported.html)
 m_{total} = \prod_{i=1}^n (1-m_i)
 ```
 
-
-**inline formula symbols** \
+**Inline formula symbols** \
 Some text. Now a formula:
 $a_k = b^n + c$ with more text \
 And some more text on a new line.
 
 More examples:
-*  long subscript: $a_{long}$
-*  superscript: $b^k$ 
-*  symbol(mu, micro): $\mu$
-*  overline: $\overline{AB}$
-*  dot: $\dot{m}$
-```
+*  $a_{long}$ = long subscript: 
+*  $b^k$ = superscript
+*  $\mu$ = symbol mu
+*  $\overline{AB}$ overline
+*  $\dot{m}$ = dot
 
 **Block quote**
 >long string of text, will auto wrap when rendered. kinda nice to have if something goes on longer that you thought but you still want it to be readable.
-
 
 
 
