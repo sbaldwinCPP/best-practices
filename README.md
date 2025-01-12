@@ -15,6 +15,9 @@ import pandas as pd
 df = pd.read_csv('file.csv')
 ```
 
+**Block quote**
+>long string of text, will auto wrap when rendered. kinda nice to have if something goes on longer that you thought but you still want it to be readable.
+
 **Formula code block**
 based on [KaTeX](https://katex.org/docs/supported.html)
 ```math
@@ -31,15 +34,26 @@ $a_k = b^n + c$ with more text \
 And some more text on a new line.
 
 More examples:
-*  $a_{long}$ = long subscript: 
+*  $a_{long}$ = long subscript
 *  $b^k$ = superscript
 *  $\mu$ = symbol mu
-*  $\overline{AB}$ overline
-*  $\dot{m}$ = dot
 
-**Block quote**
->long string of text, will auto wrap when rendered. kinda nice to have if something goes on longer that you thought but you still want it to be readable.
+without bullets:
+>$\overline{AB}$ = overline \
+$\dot{m}$ = dot
 
+
+**Flowcharts with Mermaid**
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+```mermaid
+    info
+```
 
 
 ### Python
