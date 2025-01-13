@@ -2,6 +2,10 @@
 General workflow notes, tips, and tricks  
 
 ## Formatting
+
+### Python
+official python style guide - [PEP8](https://peps.python.org/pep-0008/)
+
 ### Markdown (this document)
 
 github-flavored markdown [guide](https://docs.github.com/en/get-started/writing-on-github) and [cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
@@ -43,21 +47,64 @@ without bullets:
 $\dot{m}$ = dot
 
 
-**Flowcharts with Mermaid**
+**Diagrams**
+can be rendered with the the [mermaid](https://mermaid.js.org/) diagram format. Vscode might need an extension to render these, I had luck with [this](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) one which is available for free. Mermaid diagrams should be natively supported by [GitHub](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams) as of 2022.
+
+**Flow Chart**
 ```mermaid
-graph TD;
-    A-->B;
+flowchart TD;
+    A[Start]-->B;
     A-->C;
     B-->D;
     C-->D;
+    D-->A;
+    C-->E[Stop];
 ```
+
+<!-- **Pie Chart**
 ```mermaid
-    info
+pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+``` -->
+
+**Mind Map**
+```mermaid
+mindmap
+  root((mindmap))
+    Origins
+      Long history
+      ::icon(fa fa-book)
+      Popularisation
+        British popular psychology author Tony Buzan
+    Research
+      On effectiveness<br/>and features
+      On Automatic creation
+        Uses
+            Creative techniques
+            Strategic planning
+            Argument mapping
+    Tools
+      Pen and paper
+      Mermaid
 ```
 
+**Gantt Chart**
+```mermaid
+gantt
+    title A Gantt Diagram
+    dateFormat YYYY-MM-DD
+    section Section
+        A task          :a1, 2014-01-01, 30d
+        Another task    :after a1, 20d
+    section Another
+        Task in Another :2014-01-12, 12d
+        another task    :24d
 
-### Python
-* official python style guide - [PEP8](https://peps.python.org/pep-0008/)
+```
+
+Examples above, amd more, are shown in the official [docs](https://mermaid.js.org/intro/syntax-reference.html).
 
 ## Version Numbering
 There are generally 2 schools of thought for versioning:
