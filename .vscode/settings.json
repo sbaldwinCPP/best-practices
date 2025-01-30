@@ -1,0 +1,10 @@
+{
+	"python.analysis.typeCheckingMode": "basic",
+	"[python]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "modifications",
+		"editor.defaultFormatter": "charliermarsh.ruff"
+	},
+	"ruff.nativeServer": "off",
+	"ruff.lint.run": "onSave",
+}
