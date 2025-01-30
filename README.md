@@ -9,6 +9,37 @@ General notes, tips, and tricks for writing better code and building better proj
 [Version Numbering](#version-numbering)\
 [Powershell]()
 
+# The New Hotness
+a.k.a. things I think might be cool and want to learn more.\
+*Rust, rust everywhere - Buzz Lightyear, probably*
+
+### [UV](https://github.com/astral-sh/uv) Package Manager
+New tool that takes over packageS, environment, publishing and more.
+I liked this [deep dive](https://www.saaspegasus.com/guides/uv-deep-dive/) and the official [blog post](https://astral.sh/blog/uv) on the Astral website.
+
+### [Ruff](https://astral.sh/ruff) Code Formatter/Linter
+Also run by Astral, also written in Rust. This seems to be quite popular, but I haven't tried it yet. I currently use the [Black](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) formatter and default linter (Pylance I think?) in vscode. Ruff is also available as a vscode [extension](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff).
+
+### [Polars](https://pola.rs/) DataFrame Library
+Similar to the commonly used [pandas](https://pandas.pydata.org/) library, but polars is written in Rust (rather than C). As a result, it appears to be much faster for big-data operations and the syntax seems to be simpler, although might take some getting used to. I liked this [getting started](https://docs.pola.rs/user-guide/getting-started/) guide and this [migration guide](https://docs.pola.rs/user-guide/migration/pandas/) on switching from pandas since that is what im familiar with.
+
+# Visual Studio Code 
+This is my primary development tool WIP
+### Extensions
+### Theme
+### Layout
+### Settings
+
+# Python
+official python style guide - [PEP8](https://peps.python.org/pep-0008/)
+
+## Virtual Environments
+It's a good idea to maintain a virtual environment for each project.
+This helps keep track of exactly what libraries are needed for a project to work properly.
+That information can then be shared with other users via the requirements.txt and freeze.txt files.
+
+
+
 # Project Folder Structure
 stuff about folder layout WIP
 ```
@@ -20,21 +51,7 @@ stuff about folder layout WIP
 │   └───assets
 └───test
 ```
-
-# Python
-official python style guide - [PEP8](https://peps.python.org/pep-0008/)
-
-## Virtual Environments
-It's a good idea to maintain a virtual environment for each project.
-This helps keep track of exactly what libraries are needed for a project to work properly.
-That information can then be shared with other users via the requirements.txt and freeze.txt files.
-
-# Visual Studio Code 
-This is my primary development tool WIP
-### Extensions
-### Theme
-### Layout
-### Settings
+**Note:** use the ```tree``` command  in a terminal to get the folder structure of the current directory.
 
 # GitHub-Flavored Markdown
 Markdown is an extremely useful and flexible text format. 
@@ -66,7 +83,7 @@ based on [KaTeX](https://katex.org/docs/supported.html)
 m_{total} = \prod_{i=1}^n (1-m_i)
 ```
 
-**Inline formula symbols** \
+**Inline formula symbols**
 
 Some text. Now a formula:
 $a_k = b^n + c$ with more text \
@@ -113,7 +130,7 @@ pie title Pets adopted by volunteers
     "Rats" : 15
 ``` -->
 
-**Mind Map**
+<!-- **Mind Map**
 ```mermaid
 mindmap
   root((mindmap))
@@ -132,7 +149,7 @@ mindmap
     Tools
       Pen and paper
       Mermaid
-```
+``` -->
 
 **Gantt Chart**
 ```mermaid
