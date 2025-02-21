@@ -5,6 +5,4 @@
 		"editor.formatOnSaveMode": "modifications",
 		"editor.defaultFormatter": "charliermarsh.ruff"
 	},
-	"ruff.nativeServer": "off",
-	"ruff.lint.run": "onSave",
 }
