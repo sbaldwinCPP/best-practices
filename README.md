@@ -75,13 +75,14 @@ df = pd.read_csv('file.csv')
 
 **Formula code block**
 based on [KaTeX](https://katex.org/docs/supported.html)
-```math
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-```
 
-```math
+$$
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+$$
+
+$$
 m_{total} = \prod_{i=1}^n (1-m_i)
-```
+$$
 
 **Inline formula symbols**
 
